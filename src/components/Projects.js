@@ -15,7 +15,7 @@ function Projects() {
       name: 'Bai Bubbles - Peru Pineapples',
       des: 'In this striking advertisement, the Bai Bubbles can takes center stage, proudly showcasing its refreshing Peru Pineapple flavor. The cans sleek design highlights key features such as being a "Sparkling Antioxidant Infusion" and having just "5 calories." Surrounding the can are vibrant images of pineapple slices, whole pineapples, and splashes of bright yellow liquid, evoking the tropical and invigorating essence of the drink. The addition of green leaves enhances the fresh and natural appeal, making the design both lively and appetizing.',
       Tools: 'Canva Premium',
-      images: 'project2.PNG',
+      images: '/project2.PNG',
       instagramLink: 'https://www.instagram.com/p/DDEjnn2zK6K/?igsh=MXBwNGhrZDB0ZzBwZQ=='
     },
     {
