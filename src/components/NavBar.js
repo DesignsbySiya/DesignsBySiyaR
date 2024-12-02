@@ -9,35 +9,41 @@ const NavBar = ({activeTab}) => {
     const dispatch = useDispatch();
     const [linkNav] = useState(['home', 'skills', 'projects', 'contacts']);
     const [statusNav, changeStatusNav] = useState(null);
+
     const toggleNav = () => {
         changeStatusNav(statusNav === null ? 'active' : null);
-    }
+    };
+
     const changeTab = (value) => {
         dispatch(changeTabActive(value));
         toggleNav();
-    }
+    };
+
     return (
         <header>
             <div className="logo">
-                <img src="/logo.PNG" alt=""/> &hearts;  Designs By Siya  &hearts;
+                <img src="/logo.PNG" alt=""/> &hearts; Designs By Siya &hearts;
             </div>
             <nav className={statusNav}>
-                {
-                linkNav.map(value => (
-                    <span key={value} 
-                    className={activeTab === value ? 'active': ''}
-                    onClick={()=>changeTab(value)}>{value}</span>
-                ))
-                }
+                {linkNav.map(value => (
+                    <span
+                        key={value}
+                        className={activeTab === value ? 'active': ''}
+                        onClick={() => changeTab(value)}
+                    >
+                        {value}
+                    </span>
+                ))}
             </nav>
             <div className="icon-bar" onClick={toggleNav}>
                 <FontAwesomeIcon icon={faBars} />
             </div>
         </header>
-    )
-}
+    );
+};
+
 const mapStateToProps = (state) => ({
     activeTab: state.activeTab
-  });
-  
-  export default connect(mapStateToProps, { changeTabActive })(NavBar);
+});
+
+export default connect(mapStateToProps, { changeTabActive })(NavBar);

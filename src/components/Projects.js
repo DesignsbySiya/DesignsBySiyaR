@@ -36,7 +36,7 @@ function Projects() {
         This is my Projects
       </div>
       <div className="des" ref={(el) => el && divs.current.push(el)}>
-      Explore my creations, a journey so grand, Crafted with passion, by a skilled hand.
+        Explore my creations, a journey so grand, Crafted with passion, by a skilled hand.
       </div>
       <div className="list">
         {listProjects.map((value, key) => (
