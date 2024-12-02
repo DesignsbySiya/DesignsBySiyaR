@@ -22,7 +22,7 @@ return (
         </div>
         <div className="avatar">
             <div className="card">
-                <img src="/public/avatar.png" alt="" />
+                <img src="/avatar.PNG" alt="" />
                 <div className="info">
                     <div>Graphic Designer</div>
                     <div>Indian</div>
